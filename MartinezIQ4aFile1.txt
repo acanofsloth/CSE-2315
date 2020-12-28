@@ -1,0 +1,20 @@
+//CSE 2315 Summer 2020 Tiernan
+//Name: Ivan Martinez
+//Question #4 Part a
+//Programming language used for homework: C
+//IDE and compiler used for homework: gcc
+//Any additional info that would be needed for someone to run the program and grade it:
+
+4. In Austin, the Congress St. Bridge colony of bats was counted every 2 months starting in 2016. The first four counts were 12000, 18000, 27000, and 40500.
+
+4.a. Assuming that this growth rate continues, write a recurrence relation for the number of bats at count n.
+
+B(1) = 12000
+      +6000 or B(1)/2
+B(2) = 18000 = B(1)*1.5
+      +9000 or B(2)/2
+B(3) = 27000 = B(2)*1.5
+      +13500 or B(3)/2
+B(4) = 40500 = B(3)*1.5
+
+Recurrence Relation: B(n) = B(n-1)*1.5

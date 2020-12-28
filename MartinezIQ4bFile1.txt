@@ -1,0 +1,21 @@
+//CSE 2315 Summer 2020 Tiernan
+//Name: Ivan Martinez
+//Question #4 Part b
+//Programming language used for homework: C
+//IDE and compiler used for homework: gcc
+//Any additional info that would be needed for someone to run the program and grade it:
+
+4. In Austin, the Congress St. Bridge colony of bats was counted every 2 months starting in 2016. The first four counts were 12000, 18000, 27000, and 40500.
+ 
+4.b. Solve the recurrence relation to find a closed form solution. 
+ 
+B(n) = B(n-1)*1.5 = B(n-2)*1.5^1
+B(n) = B(n-1)*1.5*1.5 = B(n-2)*1.5^2
+B(n) = B(n-1)*1.5*1.5*1.5 = B(n-2)*1.5^3
+B(n) = B(n-1)*1.5*1.5*1.5*1.5 = B(n-2)*1.5^4
+
+B(n) = B(n-k)*1.5^k
+
+B(n) = B(1)*1.5^n-1
+
+Closed Form Solution: B(n) = 12000*1.5^n-1
